@@ -1,0 +1,307 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{casual}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+
+\makeatletter
+\@ifpackageloaded{moderncvstylebanking}{%
+	\let\oldmakecvtitle\makecvtitle
+	\renewcommand*{\makecvtitle}{%
+		{\centering\framebox{\includegraphics[width=\@photowidth]{\@photo}}\par\vspace{10pt}}%
+		\oldmakecvtitle%
+	}%
+}{%
+}
+\makeatother
+
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{multicol}
+\usepackage{import}
+\urlstyle{rm}
+
+% personal data
+\name{Cristian}{Martínez D'Urbano}
+%\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{French 1425, Rosario, Santa Fe}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+54 341 3033009}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{martinezdurbanocristian@hotmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.myname.webs.com}                         % optional, remove / comment the line if not wanted
+\extrainfo{2 de Noviembre de 1989 - 29 años}                 % optional, remove / comment the line if not wanted
+\photo[100pt][0pt]{CV_Photo.png}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+	%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+	%-----       resume       ---------------------------------------------------------
+	\makecvtitle
+	
+	\small{Estudiante avanzado de Ingeniería Electrónica, tengo ingenio (y entusiasmo) para todo aquello que se pueda programar. Soy una persona inquieta, curiosa, me fascina estar incorporando nuevos conocimientos en forma constante y me considero bastante creativo.}
+	
+	\section{Experiencia}
+	
+	\vspace{6pt}
+	
+	\begin{itemize}
+		
+		\item{\cventry{Actualm. \\ Nov 2018}{Eon6}{Diseño Web}{Rosario}{}{\vspace{3pt} Diseño Web y de APPs Móviles en modalidad freelance.
+		\\ 
+		\rightline{\url{http://www.eon6.tech}} }}	
+		
+		\rule[6pt]{\textwidth}{0.4pt}
+		
+		\item{\cventry{Actualm. \\ Nov 2018}{Magrathea}{Emprendimiento personal}{Rosario}{}{\vspace{3pt}Me encuentro desarrollando junto a un colega un proyecto en Arduino que llamamos \textbf{Magrathea} que consiste en el control de variables por medio de sensores y relés de baja potencia. Posee también un módulo de conectividad Ethernet y otro para Wifi además de una página web embebida. Está aún en etapas de desarrollo.}}	
+		
+		\rule[6pt]{\textwidth}{0.4pt}
+		
+		\item{\cventry{Oct 2018 \\ Oct 2016}{Tiempo Real}{Sistemas SOTR}{Rosario}{}{\vspace{3pt}Empresa Tiempo Real Servicios de Ingeniería: desarrollo e instalación de SOTRs para la comunicación y despacho de centrales eléctricas desde CAMMESA hacia todo el país.\\
+		Desarrollo de sistemas SCADA con NanoScada2010{\tiny \textregistered } para control de plantas.	
+		\\[6pt]
+		\rightline{\url{http://www.trsi.com.ar}} }}	
+	
+		\rule[6pt]{\textwidth}{0.4pt}	
+		
+		\item{\cventry{Abr 2015 \\ Ene 2015}{Techint - SIDERAR}{Asistente de Recocido (Pasantía)}{San Nicolás}{}{\vspace{3pt}Pasantía con el objetivo de analizar el proceso de recocido en lotes del acero buscando optimizar los tiempos de producción y la calidad del acero.}}
+		
+		\rule[6pt]{\textwidth}{0.4pt}
+		
+		\item{\cventry{Ago 2008 \\ Abr 2008}{Papelera Rosato S.A.}{Operario}{Berazategui, Buenos Aires}{}{\vspace{3pt}Selección de estudiantes de la EET N3 Politécnico de Berazategui para realizar una práctica educativa como pasante en el Parque Industrial de Plátanos.}}
+		
+		\rule[6pt]{\textwidth}{0.4pt}
+		
+		\item{\cventry{2014 \\ 2012}{Electrónica de Audio}{Emprendimiento Propio}{Rosario}{}{\vspace{3pt}Emprendimiento personal en la construcción y reparación de pedales de efectos para guitarra y otros circuitos de audio, con elaboración de la plaqueta, soldado de componentes y ensamblado final.}}
+		
+	\end{itemize}
+	
+	\section{Formación Académica}
+	
+	%\vspace{5pt}
+	
+	%\subsection{Academic Qualifications}
+	
+	\vspace{5pt}
+	
+	\begin{itemize}
+		
+		\item{\cventry{2018}{Web Developer - Full Stack}{Udemy}{Online}{}{Curso Online (+35hs) en el framework de AngularJS (Typescript, html, CSS)}}
+		
+		\rule[6pt]{\textwidth}{0.4pt}
+		
+		\item{\cventry{2019 \\ 2009}{Ingeniero Electrónico}{Universidad Nacional de Rosario}{Rosario, Santa Fe}{\textit{Materias Aprobadas 38/40 (95 \%)}}{Promedio 8,20}}
+		
+		\rule[6pt]{\textwidth}{0.4pt}
+		
+		\item{\cventry{2008 \\ 2005}{Técnico en Instalaciones y Equipos Electromecánicos}{Escuela Tecnológica Politécnico E.E.T. N3}{Berazategui, Buenos Aires}{\textit{}}{}}  % arguments 3 to 6 can be left empty
+		
+		\vspace{6pt}	
+		
+	\end{itemize}
+	
+	\vspace{2pt}
+	
+	% \subsection{Notable Projects}
+	
+	% \vspace{5pt}
+	
+	% \begin{itemize}
+	
+	% \item{\textbf{Masters Project (Ongoing):} \textit{'Development of an Intelligent Humanoid Robot'}
+	
+	% \vspace{3pt}
+	
+	% \small{I am part of a team developing a 5ft autonomous humanoid robot. This ambitious project requires strong team-working skills and high technical ability. I work well as part of the team, contributing in group discussions and taking initiative to set myself tasks when the next stage of the project is not clear. Given the role of electronics supervisor I am responsible for setting goals and ensuring all the electronic system designs are realised on time and meet the specifications of the project.}}
+	
+	% \newpage
+	
+	% \item{\textbf{3rd year individual project:} \textit{'Artificial Neural Network Approach to Source Localisation in Radiation Portal Monitoring'}
+	
+	% \vspace{3pt}
+	
+	% \small{This challenging project took place over the entirety of my third year. It required excellent planning and organisational skills, and the ability to teach myself an entirely new and complex subject. The project was a success, with the system being able to localise a radioactive source down to $ 3 cm$ within a $ 600 m^3$ sensor array. This project has been suggested for publication by my supervisor.}}
+	
+	% \vspace{6pt}
+	
+	% \item{\textbf{Industrial Project with Leyland Motors Ltd:}\textit{'Development of a Facility to Ensure the Achievement of Torque Parameters for a Specific Axle Configuration'}
+	
+	% \vspace{3pt}
+	
+	% \small{In the 3rd year of my course I spent a week completing an industrial project for Leyland Motors. I worked with a team operating as consultants for a particular problem the company was having. During this project I was working in a professional environment, and co-operating with various managers and engineers to create a design that met the requirements of the problem.}}
+	
+	% \end{itemize}
+	
+	% \section{Technical and Personal skills}
+	
+	% \vspace{6pt}
+	
+	% \begin{itemize}
+	
+	% \item \textbf{Programming Languages:} Proficient in: C, C++, Python, Matlab, Arduino, TeX \\ Also basic ability with: Assembly, VBA, VHDL.
+	
+	% \vspace{6pt}
+	
+	% \item \textbf{Industry Software Skills:} SolidWorks (Advanced), Matlab (Advanced), Ansys (Intermediate),  LTspice (Intermediate), Most MS Office products including MS project and MS access (Advanced).
+	
+	% \vspace{6pt}
+	
+	% \item \textbf{General Business Skills:} Good presentation skills, Works well in a team.
+	
+	% \vspace{6pt}
+	
+	% \item \textbf{Other:} Good soldering and spot welding skills, Can write well organised and structured reports.
+	
+	% \end{itemize}
+	
+	\section{Competencias Profesionales}
+	
+	\vspace{6pt}
+	
+	\begin{tabular}{l l l}
+		
+		\begin{minipage}[t]{0.4\textwidth}
+			\textbf{Lenguajes de Programación:} 
+			\begin{itemize}
+				\item C, C++
+				\item Arduino
+				\item MatLab
+				\item LaTeX {\tiny (editor de texto no-gráfico)}
+				\item SQL
+				\item TypeScript
+				\item html
+				\item CSS
+			\end{itemize}
+		\end{minipage}
+	 &	
+		\begin{minipage}[t]{0.35\textwidth}
+ 			\textbf{Software :} 
+		 	\begin{itemize}
+		 		\item AutoCAD
+		 		\item Excel (+Macros)
+		 		\item Visual Basic 2010
+		 		\item Angular4
+		 		\item Sistemas SCADA
+		 		\item NanoScada 2010{\tiny \textregistered  (Tiempo Real)}
+		 		\item GIMP 2
+		 	\end{itemize}
+	 \end{minipage}
+	 &
+	 \begin{minipage}[t]{0.25\textwidth}			 	
+		 	\textbf{Idiomas:} 
+		 	\begin{itemize}
+		 		\item Español (Nativo)
+		 		\item Inglés (Oral y escrito)
+		 	\end{itemize}
+	 \end{minipage}
+	 \end{tabular}
+	
+	 \begin{tabular}{l l}		
+		\begin{minipage}[t]{0.4\textwidth}	
+			\vspace{6pt}
+			\textbf{Protocolos de Comunicación:}
+			\begin{itemize}
+				\item TCP/IP
+				\item ModBus
+				\item DNP
+				\item OPC
+				\item Elcom90
+			\end{itemize}
+		\end{minipage}
+	  &
+		\begin{minipage}[t]{0.6\textwidth}	
+			\vspace{6pt}
+			\textbf{Habilidades Generales:}
+			\begin{itemize}
+				\item Buena oratoria
+				\item Trabajo en Equipo
+				\item Capacidad de Liderazgo
+				\item Gestión de Proyectos
+			\end{itemize}
+		\end{minipage}			
+	\end{tabular}
+
+	\vspace{6pt}
+	
+	\section{Intereses y Actividades Extra Curriculares}
+	
+	\vspace{6pt}
+	
+	\begin{itemize}
+		
+		\item{Olimpíada Matemática Argentina ed. 2005 y 2006.}
+		
+		\vspace{6pt}
+		
+		\item{Actor. Obras de Teatro: "Solo Dame 5 Razones" (2017--2018), "Lo Mismo Pero Al Revés"(2014-2015),"\$49,90 (Todo Se Puede Comprar)"(2015--2016.),"La Siniestra"(2014).}
+		
+		\vspace{6pt}
+		
+		\item{Toco guitarra, canto (bastante desafinado).}
+		
+		\vspace{6pt}
+		
+		\item{Hago acrobacia aérea, trapecio principalmente.}
+	\end{itemize}
+	
+	% \section{References}
+	
+	% \vspace{6pt}
+	
+	% \begin{itemize}
+	
+	% \item{Up to 4 references available on request}
+	
+	% \end{itemize}
+	
+	% Publications from a BibTeX file without multibib
+	%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+	%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+	\nocite{*}
+	\bibliographystyle{plain}
+	%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+	
+	% Publications from a BibTeX file using the multibib package
+	%\section{Publications}
+	%\nocitebook{book1,book2}
+	%\bibliographystylebook{plain}
+	%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+	%\nocitemisc{misc1,misc2,misc3}
+	%\bibliographystylemisc{plain}
+	%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+	
+	%-----       letter       ---------------------------------------------------------
+	
+\end{document}
+
+
+%% end of file `template.tex'.
